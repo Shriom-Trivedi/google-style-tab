@@ -1,0 +1,139 @@
+/* utlities */
+li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.container {
+    height: 100vh;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    height: 600px;
+    width: 75%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 4px 12px;
+}
+
+.tab-title {
+    padding-top: 5px;
+    width: 100%;
+    background-color: #8dc8fb;
+    display: flex;
+    align-items: center;
+}
+
+.tab-name {
+    background-color: rgb(221, 221, 221);
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    width: 150px;
+    padding: 15px;
+    text-align: left;
+    cursor: pointer;
+    flex-grow: 1;
+
+    border-top: 1px solid rgb(199, 199, 199);
+    border-right: 1px solid rgb(199, 199, 199);
+    border-left: 1px solid rgb(199, 199, 199);
+    /* transition: all 2s ease; */
+}
+
+.tab-name:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+.tab-name > p {
+    color: rgb(82, 82, 82);
+    font-size: 14px;
+}
+
+
+.plus-icon {
+    margin-left: 3px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.16s ease-out;
+}
+
+.plus-icon:hover {
+    background-color: #78addb;
+}
+
+.plus-icon, p {
+    font-size: 20px;
+    user-select: none;
+    color: white;
+    margin-top: -3px;
+}
+
+.tab-element {
+    flex-grow: 1;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab-area {
+    width: 800px;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+}
+
+.removeIcon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+.removeIcon:hover {
+    background-color: rgb(204, 204, 204);
+}
+
+.removeIcon > p {
+    font-size: 18px;
+    color: black;
+}
+
+.active {
+    background-color: white;
+}
+
+.active:hover {
+    background-color: white;
+}
+
+.tab {
+    display: flex;
+    align-items:center;
+    position: relative;
+}
