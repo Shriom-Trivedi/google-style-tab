@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { ReactSortable } from 'react-sortablejs';
 import './tab.css';
 
 const Tab = () => {
@@ -38,7 +39,7 @@ const Tab = () => {
             <div className="container">
                 <div className="wrapper">
                     <div className="tab-title">
-                        <ul className="tab-ul">
+                        <ReactSortable list={tab} setList={setTab} className="tab-ul">
                             {tab.map((item) => (
                                 <div className='tab' key={item.TabId}>
                                     <li
@@ -56,7 +57,7 @@ const Tab = () => {
                                     </span> 
                                 </div>
                             ))}
-                        </ul>
+                        </ReactSortable>
                         <div
                             onClick={() => addTab()} 
                             className="plus-icon" 

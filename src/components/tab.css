@@ -3,12 +3,6 @@ li {
     list-style: none;
 }
 
-ul {
-    display: flex;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
 .container {
     height: 100vh;
     background-color: #f9f9f9;
@@ -37,10 +31,16 @@ ul {
     align-items: center;
 }
 
+.tab-ul {
+    display: flex;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 .tab-name {
     background-color: rgb(221, 221, 221);
     text-align: center;
-    border-radius: 10px 10px 0 0;
+    border-radius: 20px 20px 0 0;
     width: 150px;
     padding: 15px;
     text-align: left;
@@ -50,7 +50,7 @@ ul {
     border-top: 1px solid rgb(199, 199, 199);
     border-right: 1px solid rgb(199, 199, 199);
     border-left: 1px solid rgb(199, 199, 199);
-    /* transition: all 2s ease; */
+    transition: all 0.19s ease-in-out;
 }
 
 .tab-name:hover {
@@ -116,7 +116,7 @@ ul {
 }
 
 .removeIcon:hover {
-    background-color: rgb(204, 204, 204);
+    background-color: rgb(230, 230, 230);
 }
 
 .removeIcon > p {
